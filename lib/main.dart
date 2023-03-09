@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/home.dart';
+import 'package:flutter_application_2/kutipan.dart';
+import 'package:flutter_application_2/login.dart';
+import 'package:flutter_application_2/matkul.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,10 +19,12 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
       initialRoute: "/",
       routes: {
-        "/":(context) => Home()
+        "/home":(context) => const Home(),
+        "/matkul":(context) => const Matkul(),
+        "/":(context) => const Login(),
+        "/kutipan":(context) => const Kutipan(),
       },
 
     );
