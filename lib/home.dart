@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/matkul.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -25,7 +26,7 @@ class Home extends StatelessWidget {
             Text("2009116061"),
             TextButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, "/matkul");
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const Matkul() ));
                 },
                 child: Text('next'))
           ],
